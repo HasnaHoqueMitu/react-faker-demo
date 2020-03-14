@@ -1,0 +1,7 @@
+.peoples-container{
+    display: flex;
+}
+.peoplesInfo-container{
+    padding: 10px;
+    border-right: 1px solid lightgray;
+}
