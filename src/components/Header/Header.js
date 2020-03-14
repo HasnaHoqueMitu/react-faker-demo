@@ -9,7 +9,7 @@ const Header = () => {
                 <img src={cover} alt=""/>
             </div>
             <div>    
-                    <h1>Searching For Job Near FujiSan?</h1>
+                    <h1>Searching For Job Near FujiSan????????</h1>
             </div>         
             
         </div>
