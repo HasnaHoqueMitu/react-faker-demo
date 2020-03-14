@@ -1,14 +1,19 @@
 import React from 'react';
-import cart from './Cart.css';
+import './Cart.css';
 
 const Cart = (props) => {
     const cart = props.cart;
-    const totalprice= cart.reduce((total, prd) => total + prd.price, 0)
+    const totalprice= cart.reduce((total, prd) => total + prd.salary, 0)
+    const totalName= cart.reduce((totalNmae, prd) => totalNmae + prd.name, 0)
     return (
         <div className="cartBox">
-            <h4>Order Summery</h4>
-            <p>Items Ordered: {cart.length}</p>
-            <p>total Cost for Employee Salary: {totalprice}</p>
+            <h4>Hired Employee Info</h4>
+            <p>Total Hired People: {cart.length}</p>
+            <p>Total Cost for Employee Salary: {totalprice}</p>
+            <div>
+                <h6>Hired Employees:</h6>
+                <p>Names: </p>
+            </div>
         </div>
     );
 };

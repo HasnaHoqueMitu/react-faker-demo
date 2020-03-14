@@ -19,12 +19,13 @@ const Peoples = () => {
      }
 
      const first5= fakeJob.slice(0,5);
-     const jobPost = useState(first5);
+     const [jobPost, setJob] = useState(first5);
 
 
     return (
         <div className="peoples-container">
             <div className="peoplesInfo-container">
+            <h2 className="collumHeading">Job Seekers</h2>
                     {
                          peoples.map(pl =><PeoplesInfo
                             handleAddPeople = {handleAddPeople}
@@ -32,7 +33,8 @@ const Peoples = () => {
                             ></PeoplesInfo>)
                     }
             </div>
-            <div>
+            <div className="jobPost">
+                <h2 className="collumHeading">Job Circular</h2>
                 {
                     jobPost.map(job=> <JobInfo
                     jobin={job}

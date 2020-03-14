@@ -4,12 +4,16 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div className= "header">           
-            <div>
-                <img src={cover} alt=""/>
+        <div>           
+            <div className="up">
+                <nav>
+                    <a href="">Remote Job</a>
+                    <a href="">Part Time</a>
+                    <a href="">Full Time</a>
+                </nav>
             </div>
-            <div>    
-                    <h1>Searching For Job Near FujiSan????????</h1>
+            <div className= "center">    
+                    <h1>Career Cross Limited</h1>
             </div>         
             
         </div>

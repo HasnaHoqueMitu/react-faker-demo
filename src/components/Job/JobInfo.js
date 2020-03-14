@@ -1,10 +1,14 @@
 import React from 'react';
+import './JobInfo.css';
 
 const JobInfo = (props) => {
-    const{company, job, website, email, phone} = props.jobin;
+    const{company, job, email, phone} = props.jobin;
     return (
-        <div>
-            <h4 className="company-name">{company}</h4>
+        <div className="jobinfo">
+            <h2 className="company-name">{company}</h2>
+            <h3>{job}</h3>
+            <h6>{email}</h6>
+            <p>{phone}</p>
         </div>
     );
 };

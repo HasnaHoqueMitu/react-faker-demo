@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserPlus, fad } from '@fortawesome/free-solid-svg-icons'
 import './PeoplesInfo.css';
 
 const PeoplesInfo = (props) => {
@@ -20,7 +21,7 @@ const PeoplesInfo = (props) => {
                 <button 
                     className="main-button" 
                     onClick={() => props.handleAddPeople(props.ppl)}> 
-                        {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
+                        <FontAwesomeIcon icon={faUserPlus} />
                         Hire Me
                 </button> 
             </div>   
