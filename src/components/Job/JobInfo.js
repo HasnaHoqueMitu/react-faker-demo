@@ -5,10 +5,10 @@ const JobInfo = (props) => {
     const{company, job, email, phone} = props.jobin;
     return (
         <div className="jobinfo">
-            <h2 className="company-name">{company}</h2>
-            <h3>{job}</h3>
-            <h6>{email}</h6>
-            <p>{phone}</p>
+            <h2 className="company-name">Company Name: {company}</h2>
+            <h3>Position: {job}</h3>
+            <h6>Email: {email}</h6>
+            <p>Phone: {phone}</p>
         </div>
     );
 };

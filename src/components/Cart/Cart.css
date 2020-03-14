@@ -6,3 +6,13 @@
     margin-left: 50px;
     position: fixed;
 }
+.hiredList{
+    border: 1px dotted rgb(0, 60, 255) ;
+    border-radius: 10px;
+}
+.hiredPhoto{
+    margin-top: 10px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 4, 255);
+}

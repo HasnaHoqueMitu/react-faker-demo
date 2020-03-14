@@ -5,3 +5,10 @@
     padding: 10px;
     margin: 5px;
 }
+.jobinfo:hover {
+    transform: scale(1.05); 
+    background-color: rgb(10, 133, 235);
+  }
+.company-name{
+    text-shadow:1px 1px 10px rgb(0, 174, 255);
+}

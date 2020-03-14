@@ -18,15 +18,20 @@ const PeoplesInfo = (props) => {
                 <p><small>Living in {location}</small></p>
 
                
+            
                 <button 
                     className="main-button" 
                     onClick={() => props.handleAddPeople(props.ppl)}> 
                         <FontAwesomeIcon icon={faUserPlus} />
                         Hire Me
                 </button> 
+                
+                
             </div>   
         </div>
     );
 };
+
+
 
 export default PeoplesInfo;

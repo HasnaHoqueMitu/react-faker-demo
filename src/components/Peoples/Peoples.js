@@ -14,13 +14,20 @@ const Peoples = () => {
     const [cart, setCart] = useState([]);
 
     const handleAddPeople = (ppl) =>{
-         const newCart = [...cart, ppl];
-         setCart(newCart);
-     }
+        const pplIndex = cart.indexOf(ppl);
+        if (pplIndex<0){
+            const newCart = [...cart, ppl];
+            setCart(newCart);
+        }
+        else{
+            alert("already hired")
+        }
+        //  const newCart = [...cart, ppl];
+        //  setCart(newCart);
+     };
 
-     const first5= fakeJob.slice(0,5);
-     const [jobPost, setJob] = useState(first5);
-
+     const first15Job= fakeJob.slice(0,18);
+     const [jobPost, setJob] = useState(first15Job);
 
     return (
         <div className="peoples-container">
